@@ -9,35 +9,69 @@ body{
 	padding: 0;
 	margin: 0;
 	border: 0;
+	background-color: #f2f6ff;
 }
 
 .painel{
 	display: grid;
 	grid-template-areas: "menu header" "menu conteudo";
-	grid-template-columns: 50px 1fr;
-	grid-template-rows: 50px 1fr;
+	grid-template-columns: 90px 1fr;
+	grid-template-rows: 90px 1fr;
 	width: 100%;
 	min-height: 100vh;
 	
 }
 
 .painel__menu{
-	background-color: blue;
+	background-color: #fff;
+	display: grid;
+	grid-template-rows: 50px 1fr 50px;
 	grid-area: menu;
+	grid-gap: 30px;
+	padding: 20px;
+	box-shadow: 0 0 3px rgba(0, 0, 0, .1);
+}
+
+.painel__menu img{
+	display: block;
+	width: 50px;
+	height: 50px;
+	padding: 15px;
+	box-sizing: border-box;
+	cursor: pointer;
+	
+}
+
+.painel__menu img:hover{
+	background-color: #f2e8f0;
+	border-radius: 15px;
 }
 
 .painel__header{
-	background-color: rgb(38, 167, 13);
+	box-shadow: 0 0 3px rgba(0, 0, 0, .1);
+	background-color:#fff;
 	grid-area: header;
+	text-align: right;
+	
 }
+
+.painel__header img{
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	padding: 30px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
 .painel__conteudo{
-	background-color: rgb(114, 37, 2);
+	
 	grid-area: conteudo;
 }
 .relatorio {
-    background-color:#f2f6ff;
+    
     display: block;
-    width: 100%;
+    width: 90%;
     padding: 30px;
 }
 .relatorio__resumo {
@@ -73,3 +107,4 @@ body{
     align-items: center;
     justify-content: center;
 }
+
