@@ -11,6 +11,9 @@ const playload_relatorio = {
         { data: '17/04', total_resgistrado: 625, total_terminados: 600 },
         { data: '18/04', total_resgistrado: 333, total_terminados: 333 },
         { data: '19/04', total_resgistrado: 301, total_terminados: 280 },
+        { data: '20/04', total_resgistrado: 200, total_terminados: 170 },
+        { data: '21/04', total_resgistrado: 500, total_terminados: 250 },
+        { data: '22/04', total_resgistrado: 653, total_terminados: 372 },
     ]
 }
 
