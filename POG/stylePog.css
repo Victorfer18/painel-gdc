@@ -1,0 +1,36 @@
+import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    outline: nome;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+.painel{
+	display: grid;
+	grid-template-areas: "menu header" "menu conteudo";
+	grid-template-columns: 50px 1fr;
+	grid-template-rows: 50px 1fr;
+	width: 100%;
+	min-height: 100vh;
+	
+}
+
+.painel__menu{
+	background-color: blue;
+	grid-area: menu;
+}
+
+.painel__header{
+	background-color: rgb(38, 167, 13);
+	grid-area: header;
+}
+.painel__conteudo{
+	background-color: rgb(114, 37, 2);
+	grid-area: conteudo;
+}

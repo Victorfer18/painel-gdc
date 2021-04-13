@@ -38,14 +38,14 @@ body{
 	border-radius: 5px;
 	line-height: 40px;
 	text-indent: 40px;
-	background-image: url(../IMG/png/email.png);
+	background-image: url(../IMG/ICON/email.png);
 	background-repeat: no-repeat;
 	background-position: 10px center;
 	background-size: 16px;
 }
 
 .login input[type="password"]{
-	background-image: url(../IMG/png/senha.png);
+	background-image: url(../IMG/ICON/senha.png);
 }
 
 
