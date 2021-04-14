@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entrar</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/index.js" type="module" defer></script>
+    <script type="module" defer >
+        globalThis.app.router_public()
+    </script>
 </head>
+
 <body>
     <div class="container">
         <div>
             <img src="./assets/img/logo.png" alt="logo" width="200">
-            <form action="javascript: void(0)" class="login">
-                    <h1>Seja Bem Vindo</h1>
-                    <small>Para entrar informe suas credenciais</small>
-                    <div class="space">
-                        
-                    </div> 
-                    <input type="email" name="email" required class="" placeholder="E-mail">
-                    <input type="password" name="password" required class="" placeholder="Senha">
-                    <button type="submit">entrar</button>
- 
-            </form>    
-            <p>Esqueceu sua Senha? <a href="#">Redefinir sua Senha</a></p>    
+            <form action="javascript: void(0)" name="js_form_login" onsubmit="globalThis.app.login()" class="login">
+                <h1>Seja Bem Vindo</h1>
+                <small>Para entrar informe suas credenciais</small>
+                <div class="space"></div>
+                <input type="email" value="jose1987@gmail.com" name="email" required class="" placeholder="E-mail">
+                <input type="password" value="1234" name="senha"  required class="" placeholder="Senha">
+                <button type="submit">entrar</button>
+                <small class="error js-error"></small>
+            </form>
+            <p>Esqueceu sua Senha? <a href="#">Redefinir sua Senha</a></p>
         </div>
     </div>
+
 </body>
+
 </html>

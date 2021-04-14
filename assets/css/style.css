@@ -97,5 +97,11 @@ small{
 	height: var(--line);
 }
 
+.error {
+	color: #C00;
+	display: block;
+	text-align: center;
+	line-height: 52px;
+}
 
 

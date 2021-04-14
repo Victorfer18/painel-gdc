@@ -6,41 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entrar</title>
     <link rel="stylesheet" href="./assets/css/dash.css">
+    <script src="./assets/js/index.js" type="module" defer></script>
+    <script type="module" defer >
+        globalThis.app.router_private()
+    </script>
 </head>
 <body>
     <div class="painel">
         <div class="painel__menu">
             <div></div>
             <div>
-                <img src="./assets/icon/speed.png">
-                <img src="./assets/icon/cronograma.png">
-                <img src="./assets/icon/grupo.png">
-                <img src="./assets/icon/minimizar.png">
-                <img src="./assets/icon/medalha.png">
-                <img src="./assets/icon/shop.png">
-                <img src="./assets/icon/bate-papo.png">
+                <img src="./assets/icon/speed.png"onclick="globalThis.app.indisponivel()">
+                <img src="./assets/icon/cronograma.png"onclick="globalThis.app.indisponivel()">
+                <img src="./assets/icon/grupo.png"onclick="globalThis.app.indisponivel()">
+                <img src="./assets/icon/minimizar.png"onclick="globalThis.app.indisponivel()">
+                <img src="./assets/icon/medalha.png"onclick="globalThis.app.indisponivel()">
+                <img src="./assets/icon/shop.png"onclick="globalThis.app.indisponivel()">
+                <img src="./assets/icon/bate-papo.png"onclick="globalThis.app.indisponivel()">
             </div>
             
-            <img src="./assets/icon/power.png">
+            <img src="./assets/icon/power.png" onclick="globalThis.app.logout()">
         </div>
         <div class="painel__header">
-            <img src="./assets/icon/interrogacao.png" >
-            <img src="./assets/icon/notificacao.png" >
+            <img src="./assets/icon/interrogacao.png" onclick="globalThis.app.indisponivel()">
+            <img src="./assets/icon/notificacao.png" onclick="globalThis.app.indisponivel()">
             <img src="./assets/icon/gravatar.jpg">
         </div>
         <div class="painel__conteudo">
             <div class="relatorio">
                 <div class="relatorio__resumo">
                     <div>
-                        <strong>38</strong>
+                        <strong class="js-operadores">0</strong>
                         <small>Total Operadores</small>
                     </div>
                     <div>
-                        <strong>100.000</strong>
+                        <strong class="js-registros">0</strong>
                         <small>Total Registros</small>
                     </div>
                     <div>
-                        <strong>77.301</strong>
+                        <strong class="js-finalizados">0</strong>
                         <small>Total Finalizados</small>
                     </div>
                 </div>
